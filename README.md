@@ -59,13 +59,14 @@ The solution is designed to be modular and adaptable, allowing researchers and s
 ## Code Explanation
 
 ### Main Components
+
 1. **Initialization**:
    The grid is initialized with:
    - A heated row at the top (temperature = 100).
    - All other cells set to 0.
 
-   Code snippet:
-   ```cpp
+   
+   ```c++
    void initialize_grid(std::vector<std::vector<double>> &grid, int rank, int size) {
        for (int i = 0; i < grid.size(); ++i) {
            for (int j = 0; j < grid[0].size(); ++j) {
@@ -77,9 +78,11 @@ The solution is designed to be modular and adaptable, allowing researchers and s
            }
        }
    }
-```
-2. Computation
-    ```cpp
+
+
+2. **Computation**
+
+    ```c++
     void update_grid(std::vector<std::vector<double>> &current, std::vector<std::vector<double>> &next) {
     for (int i = 1; i < current.size() - 1; ++i) {
         for (int j = 1; j < current[0].size() - 1; ++j) {
@@ -89,7 +92,7 @@ The solution is designed to be modular and adaptable, allowing researchers and s
         }
     }
 }
-```
+
 
 3. Parallelization:
 
@@ -148,4 +151,8 @@ File output_grid.txt (partial example for a 10x10 grid):
 75.0  75.0  75.0  75.0  75.0  75.0  75.0  75.0  75.0  75.0 
 50.0  50.0  50.0  50.0  50.0  50.0  50.0  50.0  50.0  50.0 
 ...
+
+
+![Heat Simulation Example](https://i.gifer.com/VS42.gif)
+
 
