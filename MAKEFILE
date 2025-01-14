@@ -1,0 +1,6 @@
+all:
+    mpicxx -o heat_simulation main.cpp
+run:
+    mpirun -np 4 ./heat_simulation
+clean:
+    rm -f heat_simulation
