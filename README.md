@@ -3,9 +3,19 @@
 ## Overview
 This project implements a **2D heat diffusion simulation** using **MPI (Message Passing Interface)** to demonstrate the capabilities of **High Performance Computing (HPC)** in solving computationally intensive problems. The simulation is based on the heat equation, a mathematical model that describes the distribution of heat (or variation in temperature) over a given area:
 
-\[
+# Heat Equation
+
+The two-dimensional heat equation is given by:
+
+$$
 \frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right)
-\]
+$$
+
+where:
+- \( u \) is the temperature at a given point.
+- \( \alpha \) is the thermal diffusivity constant.
+- \( x, y \) are the spatial coordinates.
+- \( t \) is time.
 
 onde:
 - \( u \) é a temperatura em um ponto dado.
