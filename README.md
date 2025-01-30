@@ -7,11 +7,11 @@ This project implements a **2D heat diffusion simulation** using **MPI (Message 
 \frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right)
 \]
 
-Where:
-- \( u \): Temperature at a given point.
-- \( \alpha \): Thermal diffusivity constant.
-- \( x, y \): Spatial coordinates.
-- \( t \): Time.
+onde:
+- \( u \) é a temperatura em um ponto dado.
+- \( \alpha \) é a constante de difusividade térmica.
+- \( x, y \) são as coordenadas espaciais.
+- \( t \) é o tempo.
 
 The simulation starts with an initial condition where one edge of the grid is heated (hotline), and the heat propagates across the grid over time. The primary goal is to compute the temperature at each grid point efficiently.
 
