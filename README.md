@@ -17,11 +17,6 @@ where:
 - \( x, y \) are the spatial coordinates.
 - \( t \) is time.
 
-onde:
-- \( u \) é a temperatura em um ponto dado.
-- \( \alpha \) é a constante de difusividade térmica.
-- \( x, y \) são as coordenadas espaciais.
-- \( t \) é o tempo.
 
 The simulation starts with an initial condition where one edge of the grid is heated (hotline), and the heat propagates across the grid over time. The primary goal is to compute the temperature at each grid point efficiently.
 
